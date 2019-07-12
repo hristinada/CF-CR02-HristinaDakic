@@ -1,3 +1,93 @@
+body {
+  margin: 0;
+  font-family: "PT Sans Narrow", sans-serif; }
 
+header {
+  padding: 2%;
+  background-color: #5E1214; }
+
+#bannerone {
+  display: none; }
+
+nav ul {
+  padding: 2%;
+  margin: 0 0 10px 0;
+  background-color: black;
+  text-align: center; }
+  nav ul li {
+    list-style-type: none;
+    display: inline; }
+    nav ul li a {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      padding-left: 1%; }
+
+main {
+  margin: 0px 25px; }
+
+#date {
+  display: none; }
+
+.banner {
+  display: none; }
+
+h1 {
+  background-color: lightgrey;
+  font-size: 20px;
+  padding: 0.5%;
+  color: #4B4B4B; }
+
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+article {
+  background-color: black;
+  margin-bottom: 5%;
+  height: auto;
+  width: 47%; }
+
+article img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover; }
+article p {
+  margin: 0;
+  padding-left: 1.5%;
+  color: white;
+  font-size: 3vw; }
+
+footer {
+  background-color: black;
+  text-align: center; }
+
+#navbottom a {
+  font-size: 15px; }
+
+#copyright {
+  color: white;
+  margin: 0;
+  padding: 20px; }
+
+@media screen and (min-width: 1024px) {
+  #bannerone {
+    display: block; }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+
+  #date {
+    display: block;
+    padding: 1%;
+    text-align: right; }
+
+  nav ul {
+    text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */
