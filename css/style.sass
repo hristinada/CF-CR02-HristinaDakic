@@ -32,28 +32,31 @@ nav //use nesting for creating the navigation panel
 main
 	margin: 0px 25px
 
+//hide the date, side banners and the main banner
 #date
 	display: none
 
-.banner
+.sidebanner
+	display: none
+
+#middlebanner
 	display: none
 
 h1
-	background-color: lightgrey
 	font-size: 20px
 	padding: 0.5%
 	color: #4B4B4B
 
 div
 	display: flex
-	flex-direction: row
-	flex-wrap: wrap
+	flex-flow: row wrap
 	justify-content: space-between
 
 article
 	background-color: black
+	padding-bottom: 1.5%
 	margin-bottom: 5%
-	height: auto //change to auto
+	height: auto
 	width: 47%
 
 article
@@ -66,6 +69,16 @@ article
 		padding-left: 1.5%
 		color: white
 		font-size: 3vw
+a
+	text-decoration: none
+
+#fswdmobile
+	padding-bottom: 0
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		
 
 //STYLE THE FOOTER
 footer
@@ -83,18 +96,116 @@ footer
 
 
 //For screens bigger than 480px
-@media screen and (min-width: 1024px) //???
-	#bannerone
+//shows only im inspect mode while resizing the browser!!!
+@media screen and (min-width: 480px)
+
+	#fswdmobile
+		display: none
+	
+	#date
 		display: block
+
 	header
 		display: flex
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
+	
 	#date
-		display: block
 		padding: 1%
 		text-align: right
+
 	nav
 		ul
 			text-align: left
+
+	article
+		width: 30%
+		p
+			font-size: 2.1vw
+
+	#middlebanner
+		width: 100%
+		display: flex
+		justify-content: center
+		margin-bottom: 4%
+		a
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+//For screens bigger than 1024px
+@media screen and (min-width: 1024px)
+	
+	#fswdmobile
+		display: none
+
+	#bannerone
+		display: block
+
+	.sidebanner
+		display: block
+
+	#middlebanner
+		display: block
+	
+	#date
+		display: block
+
+	header
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+	
+	#date
+		padding: 1%
+		text-align: right
+
+	nav
+		ul
+			text-align: left
+
+	article
+		width: 30%
+		p
+			font-size: 2.1vw
+
+	.twotimestwo
+		width: 47%
+
+	.sidebanner
+		float: right
+		margin-left: 2%
+		width: 15vw
+		a
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+	#FSWD
+		height: 59vw
+
+	#CF
+		position: relative
+		bottom: 68vw
+		right: 0px
+		height: 64vw
+
+	#middlebanner
+		width: 100%
+		display: flex
+		justify-content: center
+		margin-bottom: 4%
+		a
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+
+	
+
+
