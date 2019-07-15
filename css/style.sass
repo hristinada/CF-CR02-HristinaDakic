@@ -1,3 +1,4 @@
+//remove default margin and asign font
 body
 	margin: 0
 	font-family: 'PT Sans Narrow', sans-serif
@@ -46,32 +47,39 @@ h1
 	font-size: 20px
 	padding: 0.5%
 	color: #4B4B4B
+	//border: solid black 2px
 
+//flex the main two divs
 div
 	display: flex
 	flex-flow: row wrap
 	justify-content: space-between
+	//border: solid black 2px
 
+//resize and style the article
 article
+	//border: solid black 2px
 	background-color: black
 	padding-bottom: 1.5%
 	margin-bottom: 5%
 	height: auto
 	width: 47%
-
-article
+	//resize and crop the images
 	img
 		width: 100%
 		height: 70%
 		object-fit: cover
+	//position and style the text paragraph
 	p
 		margin: 0
 		padding-left: 1.5%
 		color: white
 		font-size: 3vw
-a
-	text-decoration: none
+		//remove underline from the links in the articles
+	a
+		text-decoration: none
 
+//style the mobile fswd to fit the whole article
 #fswdmobile
 	padding-bottom: 0
 	img
@@ -94,36 +102,32 @@ footer
 	margin: 0
 	padding: 20px
 
+//MEDIA QUERIES show only im inspect mode while resizing the browser!!!
 
-//For screens bigger than 480px
-//shows only im inspect mode while resizing the browser!!!
+//For screens bigger than 480px TABLET
 @media screen and (min-width: 480px)
 
+	//hide mobile banner
 	#fswdmobile
 		display: none
 	
+	//display and style the date
 	#date
 		display: block
-
-	header
-		display: flex
-		flex-direction: row
-		justify-content: space-between
-		align-items: center
-	
-	#date
 		padding: 1%
 		text-align: right
-
+	
+	//align the nav bar to the left
 	nav
 		ul
 			text-align: left
-
+	//make articles align in 3 columns
 	article
 		width: 30%
 		p
 			font-size: 2.1vw
-
+	
+	//resize middle banner and move it to the right position
 	#middlebanner
 		width: 100%
 		display: flex
@@ -135,12 +139,14 @@ footer
 				height: 100%
 				object-fit: cover
 
-//For screens bigger than 1024px
+//For screens bigger than 1024px DESKTOP
 @media screen and (min-width: 1024px)
 	
+	//hide mobile banner
 	#fswdmobile
 		display: none
 
+	//display all other banners
 	#bannerone
 		display: block
 
@@ -150,41 +156,48 @@ footer
 	#middlebanner
 		display: block
 	
-	#date
-		display: block
-
+	//flex the header to align and center the logo and the bannerone
 	header
 		display: flex
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
 	
+	//display and style the date
 	#date
+		display: block
 		padding: 1%
 		text-align: right
 
+	//align nav to the left
 	nav
 		ul
 			text-align: left
 
+	//make all articles align in 3 columns
 	article
 		width: 30%
 		p
 			font-size: 2.1vw
-
+	
+	//make the last vour articles align in 2 columns
 	.twotimestwo
 		width: 47%
 
+	//resize both divs contaning side banners and move them to the right.
+	//resize the images to the size of the div
 	.sidebanner
 		float: right
 		margin-left: 2%
 		width: 15vw
+		//border: solid black 2px
 		a
 			img
 				width: 100%
 				height: 100%
 				object-fit: cover
 
+	//position the side banner to the right height  
 	#FSWD
 		height: 59vw
 
@@ -193,12 +206,14 @@ footer
 		bottom: 68vw
 		right: 0px
 		height: 64vw
-
+	
+	//position and resize the div containing middle banner and center it
 	#middlebanner
 		width: 100%
 		display: flex
 		justify-content: center
 		margin-bottom: 4%
+		//border: solid black 2px
 		a
 			img
 				width: 100%

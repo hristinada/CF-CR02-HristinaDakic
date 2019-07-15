@@ -51,19 +51,17 @@ article {
   margin-bottom: 5%;
   height: auto;
   width: 47%; }
-
-article img {
-  width: 100%;
-  height: 70%;
-  object-fit: cover; }
-article p {
-  margin: 0;
-  padding-left: 1.5%;
-  color: white;
-  font-size: 3vw; }
-
-a {
-  text-decoration: none; }
+  article img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover; }
+  article p {
+    margin: 0;
+    padding-left: 1.5%;
+    color: white;
+    font-size: 3vw; }
+  article a {
+    text-decoration: none; }
 
 #fswdmobile {
   padding-bottom: 0; }
@@ -89,15 +87,7 @@ footer {
     display: none; }
 
   #date {
-    display: block; }
-
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-
-  #date {
+    display: block;
     padding: 1%;
     text-align: right; }
 
@@ -131,9 +121,6 @@ footer {
   #middlebanner {
     display: block; }
 
-  #date {
-    display: block; }
-
   header {
     display: flex;
     flex-direction: row;
@@ -141,6 +128,7 @@ footer {
     align-items: center; }
 
   #date {
+    display: block;
     padding: 1%;
     text-align: right; }
 
